@@ -1,15 +1,21 @@
-# 🛒 Smart Commerce — Full Stack E-Commerce Platform
+# 🛒 Shopzy — Smart Commerce
 
-![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.3.2-6DB33F?logo=springboot&logoColor=white)
-![React](https://img.shields.io/badge/React-TypeScript-3178C6?logo=react&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?logo=mysql&logoColor=white)
-![JWT](https://img.shields.io/badge/Security-JWT-informational)
-![Status](https://img.shields.io/badge/Status-Development-yellow)
+![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.3-6DB33F?logo=springboot&logoColor=white)
+![React](https://img.shields.io/badge/React-TypeScript-61DAFB?logo=react&logoColor=black)
+![MySQL](https://img.shields.io/badge/MySQL-8-4479A1?logo=mysql&logoColor=white)
+![JWT](https://img.shields.io/badge/Auth-JWT%20%2B%20OTP-black)
+![Razorpay](https://img.shields.io/badge/Payments-Razorpay-0C2451)
 
-> A full-stack multi-vendor e-commerce platform built using **Java Spring Boot** and **React + TypeScript**, providing dedicated functionality for customers, sellers, and administrators.
+**Shopzy** is a full-stack, multi-vendor e-commerce platform built with **Java Spring Boot** and **React + TypeScript**. It has separate experiences for **customers, sellers and admins**, with email-OTP login, Razorpay payments, an AI shopping assistant (Google Gemini) and a clean editorial-style UI.
 
-The platform includes authentication and authorization, product management, shopping cart, orders, payments, reviews, seller management, and administrative features.
+---
+
+## 📸 Screenshots
+
+| Homepage | Login |
+|---|---|
+| ![Homepage](assets/images/homepage.png) | ![Login](assets/images/login.png) |
 
 ---
 
@@ -17,224 +23,85 @@ The platform includes authentication and authorization, product management, shop
 
 | Category | Details |
 |---|---|
-| **Developer** | Raghav Pareek |
-| **Project** | Smart Commerce |
-| **Type** | Full Stack Web Application |
-| **Architecture** | REST API + React Frontend |
-| **Backend** | Java Spring Boot |
-| **Frontend** | React + TypeScript |
-| **Database** | MySQL |
+| Developer | Raghav Pareek |
+| Project | Shopzy — Smart Commerce |
+| Type | Full Stack Web Application (Final Year Project) |
+| Architecture | REST API + React SPA |
+| Backend | Java 17, Spring Boot 3.3 |
+| Frontend | React + TypeScript (Vite) |
+| Database | MySQL |
 
 ---
 
-## 📁 Project Structure
+## ✨ Highlights
 
-```text
-Smart-Commerce/
-│
-├── backend/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/
-│   │   │   └── resources/
-│   │   └── test/
-│   ├── pom.xml
-│   ├── Dockerfile
-│   ├── mvnw
-│   └── mvnw.cmd
-│
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   ├── package.json
-│   └── ...
-│
-├── assets/
-│   └── images/
-│       ├── homepage.png
-│       └── login.png
-│
-└── README.md
-```
-
----
-
-## 🧰 Development Tools
-
-- IntelliJ IDEA
-- Visual Studio Code
-- Java 17
-- Node.js
-- npm
-- MySQL
-- Git & GitHub
-- Maven
+- 🔐 **Passwordless login** — OTP sent to email, then JWT-based sessions
+- 🤖 **AI shopping assistant** — chatbot powered by Google Gemini
+- 💳 **Razorpay payments** — payment links with verification on success
+- 🚚 **Smart pricing** — coupons, discounts, free delivery above ₹999 (₹79 otherwise), same on frontend and backend
+- 🏪 **Multi-vendor** — sellers manage their own products, orders and reports
+- 🛠️ **Admin panel** — seller approval, coupons, deals and homepage management
+- 🧪 **Unit tests** — 30 JUnit 5 + Mockito tests (auth, JWT, cart, wishlist, discounts, OTP)
+- 🗂️ **Demo data seeder** — fills every category with realistic demo products on startup
 
 ---
 
 ## 🧱 Technology Stack
 
-### Backend
+**Backend:** Java 17 · Spring Boot · Spring Security · JWT · Spring Data JPA · Hibernate · Java Mail Sender · Lombok · Maven · Razorpay SDK · Google Gemini API
 
-- Java 17
-- Spring Boot
-- Spring Security
-- JWT Authentication
-- Spring Data JPA
-- Hibernate
-- REST APIs
-- Java Mail Sender
-- Lombok
-- Maven
+**Frontend:** React · TypeScript · Vite · Redux Toolkit · React Router · Axios · Tailwind CSS · Material UI · Formik · Yup
 
-### Frontend
+**Database:** MySQL
 
-- React
-- TypeScript
-- Redux Toolkit
-- React Router DOM
-- Axios
-- Tailwind CSS
-- Material UI
-- React Charts
-- Formik
-- Yup
-
-### Database
-
-- MySQL
-
-### Payment Integration
-
-- Razorpay
-- Stripe
+**Testing:** JUnit 5 · Mockito · AssertJ
 
 ---
 
-## ✨ Main Features
+## ✨ Features
 
-### 👤 Customer Module
+### 👤 Customer
+- Sign up / login with email OTP
+- Browse, search, filter, sort and paginate products
+- Mega-menu categories (Men, Women, Home & Furniture, Electronics)
+- Product details with gallery, offers, delivery estimate and reviews
+- Cart, wishlist, coupons
+- Address management and checkout
+- Online payment via Razorpay
+- Order history, order tracking and cancellation
+- Reviews and ratings
+- AI chatbot for product help
 
-- User registration and login
-- JWT-based authentication
-- Product browsing
-- Product search
-- Product filtering
-- Product sorting
-- Pagination
-- Shopping cart
-- Add, update, and remove cart items
-- Wishlist
-- Product reviews and ratings
-- Address management
-- Coupon support
-- Order placement
-- Order history
-- Order cancellation
-- Account management
-- Online payment integration
-- Customer support/chatbot functionality
-
-### 🛍️ Seller Module
-
-- Seller registration
-- Seller authentication
-- Seller dashboard
-- Product management
-- Add products
-- Update products
-- Delete products
-- Product inventory management
-- Order management
-- Sales reports
-- Earnings reports
-- Refund information
-- Cancellation information
-- Payment and transaction history
+### 🛍️ Seller
+- Seller registration with email verification
+- Seller dashboard with sales charts
+- Add, update and delete products
+- Inventory and order management
+- Earnings, transactions and reports
 - Seller profile management
-- Sales analytics
 
-### 🛠️ Admin Module
-
-- Admin authentication
+### 🛠️ Admin
 - Admin dashboard
-- Seller management
-- Seller approval
-- Seller suspension
-- Product and category management
+- Seller approval / suspension
 - Coupon management
-- Deal and promotion management
-- Homepage management
-- Platform administration
-
----
-
-## 🔐 Authentication & Security
-
-The backend uses **Spring Security** and **JWT** for authentication and authorization.
-
-### Security Features
-
-- User authentication
-- JWT token generation
-- JWT token validation
-- Role-based authorization
-- Protected REST APIs
-- Password encryption
-- Request validation
-- CORS configuration
-
-### Supported Roles
-
-```text
-CUSTOMER
-SELLER
-ADMIN
-```
+- Deals and homepage category management
 
 ---
 
 ## 🗂️ Backend Architecture
 
-The backend follows a layered architecture:
-
-```text
-┌─────────────────────┐
-│     Controller      │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│      Service        │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│     Repository      │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│      MySQL DB       │
-└─────────────────────┘
+```
+Controller  →  Service  →  Repository  →  MySQL
 ```
 
-### Additional Layers
+Additional layers: DTO · Model (Entity) · Mapper · Request/Response · Exception handling · Security config · AI service · Utils
 
-- DTO
-- Entity / Model
-- Mapper
-- Exception Handling
-- Security
-- Configuration
-- Utilities
-
-### Backend Package Structure
-
-```text
+```
 com.raghav.ecommerce
-│
-├── ai
-├── config
+├── ai            # Gemini chatbot
+├── config        # Security, JWT, CORS, demo data seeder
 ├── controller
-├── domain
+├── domain        # Enums (roles, order/payment status ...)
 ├── dto
 ├── exception
 ├── mapper
@@ -244,349 +111,127 @@ com.raghav.ecommerce
 ├── response
 ├── service
 ├── utils
-│
 └── EcommerceApplication.java
 ```
 
----
-
-## 🗃️ Core Entities
-
-The application contains several core business entities:
-
-- User
-- Seller
-- Product
-- Category
-- Cart
-- CartItem
-- Order
-- OrderItem
-- Address
-- Payment
-- Transaction
-- Coupon
-- Wishlist
-- Review
-- Verification Code
-- Seller Report
+**Core entities:** User · Seller · Product · Category · Cart · CartItem · Order · OrderItem · Address · PaymentOrder · Transaction · Coupon · Wishlist · Review · VerificationCode · SellerReport · Deal · HomeCategory
 
 ---
 
 ## 🔄 Application Flow
 
-The high-level application flow is:
-
-```text
-┌─────────────────────┐
-│   React Frontend    │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│    Axios Request    │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│ Spring Boot REST API│
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│     Controller      │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│   Service Layer     │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│  Repository Layer   │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│    MySQL Database   │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│    JSON Response    │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│ React / Redux State │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│    User Interface   │
-└─────────────────────┘
 ```
+React UI → Redux Thunk → Axios → Spring Boot REST API
+        → Controller → Service → Repository → MySQL
+        → JSON response → Redux state → UI
+```
+
+**Payment flow:** Cart → Address → Razorpay payment link → `/payment-success` → backend verifies the payment → order marked **PLACED** and cart cleared.
 
 ---
 
-## 💳 Payment Integration
+## 📁 Project Structure
 
-The platform supports online payment processing through:
-
-### Razorpay
-
-Used for payment processing for supported customers.
-
-### Stripe
-
-Used for international payment processing.
-
-> **Security Note:** Payment credentials must always be stored using environment variables or secure configuration and should never be committed to GitHub.
-
----
-
-## 🗄️ Database Configuration
-
-The backend uses **MySQL**.
-
-Example configuration:
-
-```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/smart_commerce?useSSL=false&serverTimezone=UTC
-spring.datasource.username=YOUR_DB_USER
-spring.datasource.password=YOUR_DB_PASSWORD
-
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
 ```
-
-> Never commit real database passwords, payment credentials, JWT secrets, or email credentials to GitHub.
+smart-commerce/
+├── backend/          # Spring Boot API
+│   ├── src/main/java/com/raghav/ecommerce
+│   ├── src/main/resources/application.properties.example
+│   ├── src/test/java # unit tests
+│   └── pom.xml
+├── frontend/         # React + TypeScript (Vite)
+│   ├── src/
+│   └── package.json
+├── assets/images/    # screenshots
+└── README.md
+```
 
 ---
 
 ## 🚀 Getting Started
 
-### 1. Clone the Repository
+### Prerequisites
+- Java 17
+- Node.js 18+ and npm
+- MySQL 8
 
+### 1. Clone
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd Smart-Commerce
+git clone https://github.com/raghavpareek0103/smart-commerce.git
+cd smart-commerce
 ```
 
----
-
-### ⚙️ Backend Setup
-
-Navigate to the backend directory:
-
+### 2. Backend
 ```bash
 cd backend
 ```
-
-Make sure the following are installed:
-
-- Java 17
-- MySQL
-- Maven
-
-Create/configure:
-
-```text
-backend/src/main/resources/application.properties
-```
-
-Example configuration:
-
-```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/smart_commerce?useSSL=false&serverTimezone=UTC
-spring.datasource.username=YOUR_DB_USER
-spring.datasource.password=YOUR_DB_PASSWORD
-
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-
-app.jwt.secret=YOUR_JWT_SECRET
-app.jwt.expiration-ms=86400000
-```
-
-### Run the Backend
-
-#### Windows
-
+Copy the example config and fill in your own values:
 ```bash
+# Windows (PowerShell)
+Copy-Item src\main\resources\application.properties.example src\main\resources\application.properties
+# Linux / macOS
+cp src/main/resources/application.properties.example src/main/resources/application.properties
+```
+
+You will need:
+- a MySQL database and its username/password
+- a Gmail address + [App Password](https://myaccount.google.com/apppasswords) (for OTP emails)
+- Razorpay **test** keys (Dashboard → Settings → API Keys)
+- a Google Gemini API key (for the chatbot)
+
+Run:
+```bash
+# Windows
 mvnw.cmd spring-boot:run
-```
-
-#### Linux/macOS
-
-```bash
+# Linux / macOS
 ./mvnw spring-boot:run
 ```
+The API starts on **http://localhost:5454**.
 
-Or, if Maven is installed:
-
-```bash
-mvn spring-boot:run
-```
-
----
-
-### 🌐 Frontend Setup
-
-Open a new terminal and navigate to the frontend:
-
+### 3. Frontend
 ```bash
 cd frontend
-```
-
-Install dependencies:
-
-```bash
 npm install
-```
-
-Start the development server:
-
-```bash
 npm run dev
 ```
+Open **http://localhost:5173**.
 
-The frontend will normally be available at:
-
-```text
-http://localhost:5173
-```
-
----
-
-## 🔑 Environment Variables
-
-Do not commit private credentials to the repository.
-
-### Frontend `.env`
-
-```env
-VITE_API_BASE_URL=http://localhost:8080/api
-VITE_RAZORPAY_KEY_ID=YOUR_RAZORPAY_PUBLIC_KEY
-VITE_STRIPE_PK=YOUR_STRIPE_PUBLISHABLE_KEY
-```
-
-### Backend Environment Configuration
-
-```env
-DB_USERNAME=YOUR_DB_USER
-DB_PASSWORD=YOUR_DB_PASSWORD
-JWT_SECRET=YOUR_JWT_SECRET
-RAZORPAY_KEY_ID=YOUR_RAZORPAY_KEY
-RAZORPAY_KEY_SECRET=YOUR_RAZORPAY_SECRET
-STRIPE_SECRET_KEY=YOUR_STRIPE_SECRET
-```
+> Razorpay runs in **test mode** — no real money is charged. Use Razorpay's test cards/UPI to complete an order.
 
 ---
 
 ## 🧪 Testing
 
-### Run Backend Tests
-
 ```bash
-mvn test
+cd backend
+mvnw.cmd test        # Windows
+./mvnw test          # Linux / macOS
 ```
 
-### Build Backend
-
-```bash
-mvn clean package
-```
-
-### Build Frontend
-
-```bash
-npm run build
-```
+Covers: OTP generation, JWT creation/validation, authentication service, cart totals, wishlist, product discount calculation.
 
 ---
 
-## 📊 Project Status
+## 🛡️ Security
 
-### Current Implementation
-
-- ✅ Spring Boot backend
-- ✅ MySQL database integration
-- ✅ Spring Data JPA
-- ✅ Spring Security
-- ✅ JWT authentication
-- ✅ REST APIs
-- ✅ Customer functionality
-- ✅ Seller functionality
-- ✅ Admin functionality
-- ✅ Product management
-- ✅ Cart management
-- ✅ Order management
-- ✅ Payment integration
-- ✅ React frontend
-- ✅ Redux state management
-- ✅ API integration
-
----
-
-## 📸 Screenshots
-
-### Homepage
-
-_Add homepage screenshot here._
-
-### Login
-
-_Add login screenshot here._
-
----
-
-## 🛡️ Security Practices
-
-The application follows common security practices including:
-
-- JWT-based authentication
-- Password encryption
-- Role-based access control
-- Input validation
-- CORS configuration
-- Protected APIs
-- Environment-based secrets
-- Secure payment configuration
-
-For production deployments, the application should use **HTTPS** and secure secret management.
+- Email-OTP authentication with JWT tokens
+- Role-based access: `ROLE_CUSTOMER`, `ROLE_SELLER`, `ROLE_ADMIN`
+- Protected REST APIs via Spring Security filter
+- CORS configured for the frontend
+- Secrets kept out of Git (`application.properties` is git-ignored; only an `.example` file is committed)
 
 ---
 
 ## 📈 Future Improvements
 
-Planned improvements include:
-
-- Redis caching
-- Advanced product search
-- Elasticsearch integration
-- Dockerized deployment
-- CI/CD pipeline
-- Cloud deployment
-- Improved analytics
-- Performance optimization
-- Centralized logging
-- Monitoring and observability
-- Automated integration testing
+- Stripe / international payments
+- Docker + cloud deployment
+- CI/CD with GitHub Actions
+- Redis caching and Elasticsearch search
+- Integration tests
 
 ---
 
-## 🤝 Development
+## 📄 License & Attribution
 
-Smart Commerce is maintained and customized as a full-stack e-commerce application.
-
-Development focuses on:
-
-- Backend API development
-- Frontend integration
-- Authentication and authorization
-- Database design
-- Payment integration
-- E-commerce business logic
-- Performance improvements
-- Security improvements
-
----
-
-## 📄 License
-
-This project includes components adapted from an existing e-commerce implementation.
-
-Please refer to the repository's original license and attribution requirements before redistributing or presenting the project as entirely original work.
+This project started from an existing open-source e-commerce implementation and has been extended and redesigned (UI redesign, OTP/JWT fixes, Razorpay flow, shipping logic, AI chatbot, demo data, unit tests). Please check the original project's license before redistributing.
