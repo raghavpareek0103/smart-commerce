@@ -8,6 +8,7 @@
 ![Razorpay](https://img.shields.io/badge/Payments-Razorpay-0C2451)
 
 **Shopzy** is a full-stack, multi-vendor e-commerce platform built with **Java Spring Boot** and **React + TypeScript**. It has separate experiences for **customers, sellers and admins**, with email-OTP login, Razorpay payments, an AI shopping assistant (Google Gemini) and a clean editorial-style UI.
+<<<<<<< HEAD
 
 ---
 
@@ -16,8 +17,12 @@
 | Homepage | Login |
 |---|---|
 | ![Homepage](assets/images/homepage.png) | ![Login](assets/images/login.png) |
+=======
+>>>>>>> d11ee3c1a58ca5e3faf623b93698f64056492c28
 
 ---
+
+
 
 ## 👨‍💻 Project Information
 
@@ -234,4 +239,8 @@ Covers: OTP generation, JWT creation/validation, authentication service, cart to
 
 ## 📄 License & Attribution
 
+<<<<<<< HEAD
 This project started from an existing open-source e-commerce implementation and has been extended and redesigned (UI redesign, OTP/JWT fixes, Razorpay flow, shipping logic, AI chatbot, demo data, unit tests). Please check the original project's license before redistributing.
+=======
+This project started from an existing open-source e-commerce implementation and has been extended and redesigned (UI redesign, OTP/JWT fixes, Razorpay flow, shipping logic, AI chatbot, demo data, unit tests). Please check the original project's license before redistributing.
+>>>>>>> d11ee3c1a58ca5e3faf623b93698f64056492c28
