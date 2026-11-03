@@ -1,0 +1,43 @@
+/* Hero wala hi classy serif font */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap");
+
+.wish-serif {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+/* Khaali page ke peeche outline "Wishlist" */
+.wish-watermark {
+  font-size: 220px;
+  font-weight: 600;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(42, 29, 23, 0.06);
+}
+
+/* Dil halka sa dhadakta hai */
+.wish-heart {
+  animation: wishBeat 2.4s ease-in-out infinite;
+}
+@keyframes wishBeat {
+  0%, 100% { transform: scale(1); }
+  15%      { transform: scale(1.12); }
+  30%      { transform: scale(1); }
+  45%      { transform: scale(1.08); }
+}
+
+/* Cards ek-ek karke aate hain */
+.wish-in {
+  animation: wishIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes wishIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Dark button hover */
+.wish-cta {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.wish-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px -12px rgba(180, 83, 42, 0.6);
+}

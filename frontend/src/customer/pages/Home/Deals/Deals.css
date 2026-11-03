@@ -1,0 +1,33 @@
+/* Hero wala hi classy serif font */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap");
+
+.deal-serif {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+/* Peeche bada outline "Deals" */
+.deal-watermark {
+  font-size: 190px;
+  font-weight: 600;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(42, 29, 23, 0.06);
+}
+
+/* Discount seal ke andar dotted ring, hover pe ghoomti hai */
+.deal-seal::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  border: 1px dashed rgba(231, 180, 143, 0.6);
+  transition: transform 0.8s ease;
+}
+.group:hover .deal-seal::before {
+  transform: rotate(180deg);
+}
+
+/* Hover pe card upar uthe to kate nahi */
+.deals-slider .slick-list {
+  overflow: hidden;
+  padding: 6px 0 10px;
+}

@@ -1,0 +1,11 @@
+.App {
+  font-family: "Poppins", "Open Sans", sans-serif;
+  font-weight: 400;
+  background: #f8fafb;
+  color: #1f2937;
+  min-height: 100vh;
+}
+h1, h2, h3 { font-family: "Poppins", sans-serif; }
+html { scroll-behavior: smooth; }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb { background: #00927c55; border-radius: 8px; }

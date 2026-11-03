@@ -1,0 +1,52 @@
+/* Hero wala hi classy serif font */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap");
+
+.footer-serif {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+/* Peeche bada halka "Shopzy" */
+.footer-watermark {
+  font-size: clamp(5rem, 16vw, 15rem);
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(201, 169, 110, 0.09);
+  background: linear-gradient(180deg, rgba(201, 169, 110, 0.07), transparent 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Link ke neeche chalne wali line */
+.footer-link {
+  position: relative;
+}
+.footer-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 1px;
+  background: #c9a96e;
+  transition: width 0.25s ease;
+}
+.footer-link:hover::after {
+  width: 100%;
+}
+
+/* Social icon hover par apne brand ke rang ka */
+.social-btn:hover {
+  background: var(--brand);
+  border-color: var(--brand);
+  box-shadow: 0 8px 20px -6px var(--brand);
+}
+
+/* Chrome autofill ka neela background hatao — box ke andar poora safed + gol */
+.newsletter-input:-webkit-autofill,
+.newsletter-input:-webkit-autofill:hover,
+.newsletter-input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #ffffff inset;
+  -webkit-text-fill-color: #1f2937;
+  caret-color: #1f2937;
+  transition: background-color 9999s ease-in-out 0s;
+}

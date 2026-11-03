@@ -1,0 +1,96 @@
+/* Classy serif font sirf banner ke liye */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap");
+
+.hero-serif {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+/* Slide badalne par rang dheere se badle */
+.hero {
+  transition: background-color 0.7s ease, color 0.7s ease;
+}
+
+/* Text neeche se upar aata hai, ek ke baad ek */
+.hero-rise {
+  animation: heroRise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes heroRise {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Arch photo khulti hai */
+.hero-img-in {
+  animation: heroImgIn 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes heroImgIn {
+  from { opacity: 0; clip-path: inset(100% 0 0 0 round 999px 999px 0 0); }
+  to   { opacity: 1; clip-path: inset(0 0 0 0 round 999px 999px 0 0); }
+}
+
+/* Photo halki zoom-out (Ken Burns) */
+.hero-kenburns {
+  animation: heroKen 3.6s ease-out both;
+}
+@keyframes heroKen {
+  from { transform: scale(1.12); }
+  to   { transform: scale(1); }
+}
+
+/* Chhoti tilted photo */
+.hero-small {
+  animation: heroSmall 0.9s 0.15s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes heroSmall {
+  from { opacity: 0; transform: translateY(40px) rotate(-12deg); }
+  to   { opacity: 1; transform: translateY(0) rotate(-6deg); }
+}
+
+/* Gol badge ghoomta rehta hai */
+.hero-spin {
+  animation: heroSpin 14s linear infinite;
+}
+@keyframes heroSpin {
+  to { transform: rotate(360deg); }
+}
+
+/* Price chip upar-neeche tairta hai */
+.hero-float {
+  animation: heroFloat 3s ease-in-out infinite;
+}
+@keyframes heroFloat {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); }
+}
+
+/* Active tab ki progress line (3 sec) */
+.hero-progress {
+  animation: heroProgress 3s linear both;
+}
+@keyframes heroProgress {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+/* Peeche bada outline number */
+.hero-number {
+  font-size: 260px;
+  line-height: 1;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--fg);
+  animation: heroNum 0.9s ease both;
+}
+@keyframes heroNum {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 0.07; transform: translateY(0); }
+}
+
+/* Button hover */
+.hero-cta {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.hero-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px -12px var(--accent);
+}

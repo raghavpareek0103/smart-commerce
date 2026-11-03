@@ -1,0 +1,56 @@
+/* Hero wala hi classy serif font */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap");
+
+.pl-serif {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+/* Heading ke peeche bada outline word */
+.pl-watermark {
+  font-size: 200px;
+  font-weight: 600;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(42, 29, 23, 0.06);
+}
+
+/* Cards ek-ek karke aate hain */
+.pl-in {
+  animation: plIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes plIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Patla scrollbar filter ke liye */
+.pl-scroll::-webkit-scrollbar { width: 4px; }
+.pl-scroll::-webkit-scrollbar-thumb { background: rgba(42, 29, 23, 0.15); border-radius: 4px; }
+
+/* Radio buttons theme ke rang me */
+.pl-filter .MuiRadio-root { color: rgba(42, 29, 23, 0.3); padding: 6px 8px; }
+.pl-filter .MuiRadio-root.Mui-checked { color: #b4532a; }
+.pl-filter .MuiFormControlLabel-root { margin-left: -8px; }
+.pl-filter .MuiFormControlLabel-label { color: rgba(42, 29, 23, 0.75); }
+.pl-filter .Mui-checked + .MuiFormControlLabel-label,
+.pl-filter .MuiFormControlLabel-root:has(.Mui-checked) .MuiFormControlLabel-label { color: #2a1d17; font-weight: 600; }
+
+/* Sort dropdown */
+.pl-sort .MuiOutlinedInput-notchedOutline { border-color: rgba(42, 29, 23, 0.2) !important; border-radius: 999px; }
+.pl-sort.Mui-focused .MuiOutlinedInput-notchedOutline { border-color: #b4532a !important; }
+
+/* Pagination — gol, serif numbers */
+.pl-pagination .MuiPaginationItem-root {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 15px;
+  color: #2a1d17;
+  border-radius: 999px;
+}
+.pl-pagination .MuiPaginationItem-root.Mui-selected {
+  background: #2a1d17 !important;
+  color: #f6f1ea;
+}
+.pl-pagination .MuiPaginationItem-root:hover { background: #f3ebe3; }
+
+/* Dark button hover */
+.pl-cta { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+.pl-cta:hover { transform: translateY(-2px); box-shadow: 0 14px 30px -12px rgba(180, 83, 42, 0.6); }

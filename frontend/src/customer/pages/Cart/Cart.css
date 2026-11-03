@@ -1,0 +1,32 @@
+/* Hero wala hi classy serif font */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap");
+
+.cart-serif {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+/* Khaali bag ke peeche outline "Empty" */
+.cart-watermark {
+  font-size: 240px;
+  font-weight: 600;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(42, 29, 23, 0.06);
+}
+
+/* Bag halka sa tairta hai */
+.cart-bag {
+  animation: cartBag 3.5s ease-in-out infinite;
+}
+@keyframes cartBag {
+  0%, 100% { transform: translateY(0) rotate(-3deg); }
+  50%      { transform: translateY(-8px) rotate(3deg); }
+}
+
+/* Dark button hover */
+.cart-cta {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+.cart-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px -12px rgba(180, 83, 42, 0.6);
+}

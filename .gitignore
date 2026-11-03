@@ -1,0 +1,80 @@
+# =========================
+# IntelliJ IDEA
+# =========================
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# =========================
+# Maven / Java
+# =========================
+target/
+*.class
+
+# =========================
+# Maven Wrapper
+# =========================
+!.mvn/wrapper/maven-wrapper.jar
+
+# =========================
+# Frontend
+# =========================
+node_modules/
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# =========================
+# Spring Boot Secrets
+# =========================
+application.properties
+
+# =========================
+# IDE / Build
+# =========================
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+
+# ---- Secrets & build (Shopzy) ----
+backend/src/main/resources/application.properties
+node_modules/
+frontend/dist/
+backend/target/
+.env
+.idea/
+*.iml
+*.log

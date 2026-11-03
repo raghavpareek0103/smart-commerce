@@ -1,0 +1,62 @@
+/* Hero wala hi classy serif font */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap");
+
+.seller-serif {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+/* Peeche bada outline "Sell" */
+.seller-watermark {
+  font-size: 260px;
+  font-weight: 600;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(42, 29, 23, 0.06);
+}
+
+/* Photo dheere zoom hoti rehti hai */
+.seller-zoom {
+  animation: sellerZoom 14s ease-in-out infinite alternate;
+}
+@keyframes sellerZoom {
+  from { transform: scale(1); }
+  to   { transform: scale(1.08); }
+}
+
+/* Gol badge ghoomta rehta hai */
+.seller-spin {
+  animation: sellerSpin 14s linear infinite;
+}
+@keyframes sellerSpin {
+  to { transform: rotate(360deg); }
+}
+
+/* Cards upar-neeche tairte hain */
+.seller-float {
+  animation: sellerFloat 4s ease-in-out infinite;
+}
+.seller-float-2 {
+  animation: sellerFloat 4s ease-in-out 2s infinite;
+}
+@keyframes sellerFloat {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+/* Chart ke bars neeche se badhte hain */
+.seller-bar {
+  transform-origin: bottom;
+  animation: sellerBar 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes sellerBar {
+  from { transform: scaleY(0); }
+  to   { transform: scaleY(1); }
+}
+
+/* Button hover */
+.seller-cta {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.seller-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px -12px rgba(180, 83, 42, 0.6);
+}

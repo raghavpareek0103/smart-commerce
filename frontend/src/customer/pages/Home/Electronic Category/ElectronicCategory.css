@@ -1,0 +1,26 @@
+/* Hero wala hi classy serif font */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap");
+
+.elec-serif {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+/* Peeche halki tirchi lines */
+.elec-lines {
+  background-image: repeating-linear-gradient(115deg, rgba(231, 180, 143, 0.05) 0 1px, transparent 1px 22px);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 70%);
+  mask-image: linear-gradient(90deg, transparent, #000 70%);
+}
+
+/* Peeche bada outline "Tech" */
+.elec-watermark {
+  font-size: 200px;
+  font-weight: 600;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(231, 180, 143, 0.08);
+}
+
+/* Hover pe arch ke peeche terracotta chamak */
+.group:hover .elec-arch {
+  box-shadow: 0 24px 40px -22px rgba(180, 83, 42, 0.7);
+}

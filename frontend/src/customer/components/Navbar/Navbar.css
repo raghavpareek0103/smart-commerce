@@ -1,0 +1,110 @@
+/* Classy serif font (hero jaisa) */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap");
+
+.nav-serif {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Frosted glass capsule */
+.nav-capsule {
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+}
+
+/* "S" logo badge — dark forest + sunehri, hover pe ghoomta hai */
+.logo-badge {
+  background: linear-gradient(135deg, #1b2420, #26312c, #3a4a41, #1b2420);
+  background-size: 300% 300%;
+  border: 1px solid rgba(201, 169, 110, 0.45);
+  animation: badgeShift 6s ease infinite;
+  transition: transform 0.3s ease;
+}
+.group:hover .logo-badge {
+  transform: rotate(-10deg) scale(1.05);
+}
+@keyframes badgeShift {
+  0%, 100% { background-position: 0% 50%; }
+  50%      { background-position: 100% 50%; }
+}
+
+/* Menu ke peeche sliding pill */
+.nav-pill {
+  transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1), width 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
+}
+
+/* Search button */
+.search-btn {
+  background: #2a1d17;
+  color: #f6f1ea;
+  box-shadow: 0 6px 16px -6px rgba(42, 29, 23, 0.6);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+.search-btn:hover {
+  background: #b4532a;
+}
+
+/* Search placeholder ka word neeche se upar aata hai */
+.hint-roll {
+  display: inline-block;
+  animation: hintRoll 0.45s ease both;
+}
+@keyframes hintRoll {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Gradient border wala "Become a Seller" pill */
+.seller-pill {
+  border: 1.5px solid transparent;
+  background:
+    linear-gradient(#fbf8f4, #fbf8f4) padding-box,
+    linear-gradient(135deg, #b4532a, #c9a96e) border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.seller-pill:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px -8px rgba(180, 83, 42, 0.5);
+}
+
+/* Offers ticker — lagatar right se left chalta hai */
+.ticker {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+   .ticker-track {
+     animation: ticker 45s linear infinite;
+   }
+.ticker:hover .ticker-track {
+  animation-play-state: paused;
+}
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Patti pe guzarti hui chamak */
+.announce-shine {
+  left: -10rem;
+     background: linear-gradient(90deg, transparent, rgba(201, 169, 110, 0.14), transparent);
+  transform: skewX(-20deg);
+  animation: shine 6s ease-in-out infinite;
+}
+@keyframes shine {
+  0%       { left: -10rem; }
+  60%, 100% { left: 110%; }
+}
+
+/* Mega menu halka sa neeche se khulta hai */
+.categorySheet {
+  animation: sheetIn 0.25s ease both;
+}
+@keyframes sheetIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
