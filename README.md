@@ -11,13 +11,7 @@
 
 ---
 
-## 📸 Screenshots
 
-| Homepage | Login |
-|---|---|
-| ![Homepage](assets/images/homepage.png) | ![Login](assets/images/login.png) |
-
----
 
 ## 👨‍💻 Project Information
 
