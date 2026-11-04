@@ -230,7 +230,20 @@ Covers: OTP generation, JWT creation/validation, authentication service, cart to
 - Integration tests
 
 ---
+## 👨‍💻 Author
 
-## 📄 License & Attribution
+**Raghav Pareek** — designed and developed Shopzy as a final year project.
 
-This project started from an existing open-source e-commerce implementation and has been extended and redesigned (UI redesign, OTP/JWT fixes, Razorpay flow, shipping logic, AI chatbot, demo data, unit tests). Please check the original project's license before redistributing.
+- GitHub: [@raghavpareek0103](https://github.com/raghavpareek0103)
+
+## 📄 License
+
+© 2026 Raghav Pareek. All rights reserved.## 👨‍💻 Author
+
+**Raghav Pareek** — designed and developed Shopzy as a final year project.
+
+- GitHub: [@raghavpareek0103](https://github.com/raghavpareek0103)
+
+## 📄 License
+
+© 2026 Raghav Pareek. All rights reserved.
