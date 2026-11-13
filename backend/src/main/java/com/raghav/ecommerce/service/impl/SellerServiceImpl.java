@@ -34,6 +34,20 @@ public class SellerServiceImpl implements SellerService {
 
     @Override
     public Seller createSeller(Seller seller) throws SellerException {
+        // ---- Server-side validation (frontend bypass hone par bhi safe) ----
+        if (seller.getMobile() == null || !seller.getMobile().matches("^[6-9]\\d{9}$")) {
+            throw new SellerException("Enter a valid 10-digit mobile number");
+        }
+        if (seller.getGSTIN() == null
+                || !seller.getGSTIN().matches("^\\d{2}[A-Z]{5}\\d{4}[A-Z][1-9A-Z]Z[0-9A-Z]$")) {
+            throw new SellerException("Enter a valid 15-character GSTIN");
+        }
+        if (seller.getEmail() == null || !seller.getEmail().matches("^[\\w.+-]+@[\\w-]+\\.[\\w.]+$")) {
+            throw new SellerException("Enter a valid email");
+        }
+        if (seller.getPickupAddress() == null) {
+            throw new SellerException("Pickup address is required");
+        }
         Seller sellerExist = sellerRepository.findByEmail(seller.getEmail());
         if (sellerExist != null) {
             throw new SellerException("Seller already exists used different email");
