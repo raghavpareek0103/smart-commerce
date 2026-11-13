@@ -158,7 +158,7 @@ const Banner = () => {
                 <path id="heroCircle" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0" />
               </defs>
               <text fill="currentColor" fontSize="9" fontWeight="600">
-                <textPath href="#heroCircle" textLength="236" lengthAdjust="spacing">NEW SEASON • SHOP NOW • SHOPZY •</textPath>
+                <textPath href="#heroCircle" textLength="236" lengthAdjust="spacing">NEW SEASON • SHOP NOW • SYNCART •</textPath>
               </text>
             </svg>
             <span className="w-12 h-12 lg:w-14 lg:h-14 rounded-full grid place-items-center text-white shadow-lg" style={{ background: s.accent }}>

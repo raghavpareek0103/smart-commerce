@@ -71,7 +71,7 @@ const features = [
 ];
 
 const offersList = [
-    { code: "SHOPZY10", text: "Extra 10% off on prepaid orders" },
+    { code: "SYNCART10", text: "Extra 10% off on prepaid orders" },
     { code: "FIRST200", text: "Flat ₹200 off on your first order above ₹999" },
     { code: "BANK5", text: "5% cashback on select bank cards" },
 ];
@@ -195,7 +195,7 @@ const ProductDetails = () => {
     const lastWord = titleWords.length > 1 ? titleWords.pop() : "";
     const firstWords = titleWords.join(" ");
 
-    const brand = product?.seller?.businessDetails?.businessName || "Shopzy Studio";
+    const brand = product?.seller?.businessDetails?.businessName || "SynCart Studio";
     const discount = product?.discountPercent ?? 0;
 
     return (
@@ -206,7 +206,7 @@ const ProductDetails = () => {
             <section className='relative overflow-hidden px-5 lg:px-20 pt-8 pb-20'>
                 {/* peeche halka watermark */}
                 <span className='pd-serif pd-outline pointer-events-none select-none absolute -right-10 bottom-0 text-[160px] lg:text-[260px] italic leading-none'>
-                    Shopzy
+                    SynCart
                 </span>
 
                 {/* Breadcrumb */}
@@ -276,7 +276,7 @@ const ProductDetails = () => {
                                             <path id="pdCircle" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0" />
                                         </defs>
                                         <text fontSize="9.5" letterSpacing="3" fill="#2a1d17" fontWeight="600">
-                                            <textPath href="#pdCircle">LIMITED · OFFER · SHOPZY · EDIT ·</textPath>
+                                            <textPath href="#pdCircle">LIMITED · OFFER · SYNCART · EDIT ·</textPath>
                                         </text>
                                     </svg>
                                     <div className='absolute inset-[22%] rounded-full bg-[#b4532a] text-[#f6f1ea] grid place-items-center shadow-lg'>
@@ -686,7 +686,7 @@ const ProductDetails = () => {
                                 </div>
                                 <div className='pt-4'>
                                     <p className='text-[10px] font-semibold tracking-[0.25em] uppercase text-[#c9a96e] truncate'>
-                                        {item.seller?.businessDetails?.businessName || "Shopzy"}
+                                        {item.seller?.businessDetails?.businessName || "SynCart"}
                                     </p>
                                     <p className='pd-serif mt-1 text-lg truncate group-hover:text-[#e7b48f] transition-colors'>{item.title}</p>
                                     <div className='mt-1 flex items-center gap-2 text-sm'>

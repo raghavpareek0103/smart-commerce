@@ -28,7 +28,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.List;
 
 /**
- * Shopzy AI assistant.
+ * SynCart AI assistant.
  * 1) Database se context banata hai (product / cart / orders)
  * 2) User ke SAWAAL se database me match hone wale products dhoondhta hai
  *    (jaise "best phone under 30k" -> mobiles category, ₹30,000 tak) — ProductContextFinder
@@ -104,7 +104,7 @@ public class AiChatBotServiceImpl implements AiChatBotService {
             System.out.println("Product search for AI failed: " + e.getMessage());
         }
         if (!matched.isEmpty()) {
-            sb.append("PRODUCTS IN SHOPZY THAT MATCH THE CUSTOMER'S QUESTION ")
+            sb.append("PRODUCTS IN SYNCART THAT MATCH THE CUSTOMER'S QUESTION ")
                     .append("(already filtered by category and budget — recommend from these first):\n")
                     .append(matched).append("\n");
         }
@@ -234,11 +234,11 @@ public class AiChatBotServiceImpl implements AiChatBotService {
         String url = geminiBaseUrl + "/v1beta/models/" + model + ":generateContent";
 
         String systemText =
-                "You are 'Shopzy AI Assistant', a friendly shopping assistant for the Shopzy e-commerce store in India.\n" +
+                "You are 'SynCart AI Assistant', a friendly shopping assistant for the SynCart e-commerce store in India.\n" +
                         "- Reply in the same language the customer uses (English, Hindi or Hinglish).\n" +
                         "- Keep answers short, helpful and friendly (2-6 short lines). Use ₹ for prices.\n" +
                         "- Only use the store data given below for facts about products, cart and orders. Never invent products, prices or order details.\n" +
-                        "- When 'PRODUCTS IN SHOPZY THAT MATCH THE CUSTOMER'S QUESTION' is present, recommend 2-4 of those by their exact name and price, " +
+                        "- When 'PRODUCTS IN SYNCART THAT MATCH THE CUSTOMER'S QUESTION' is present, recommend 2-4 of those by their exact name and price, " +
                         "best match first, with one short reason each.\n" +
                         "- If nothing in the data fits the request (for example no product within the budget), say so honestly and suggest the closest options from the data.\n" +
                         "- For greetings like 'hi', greet back and say what you can help with (product suggestions, cart, orders).\n\n" +

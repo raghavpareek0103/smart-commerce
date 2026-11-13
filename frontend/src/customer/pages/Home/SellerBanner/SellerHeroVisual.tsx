@@ -1,5 +1,5 @@
 // SellerHeroVisual.tsx
-// Home page ke "Grow your business with Shopzy" section ka LEFT side visual.
+// Home page ke "Grow your business with SynCart" section ka LEFT side visual.
 // Photo ki jagah ek live-jaisa "Seller Studio" dashboard — arch frame, earnings chart,
 // floating order / payout cards. Koi bahar ki image nahi, isliye kabhi tootega nahi.
 
@@ -93,7 +93,7 @@ const SellerHeroVisual = () => {
   const [lx, ly] = xy[xy.length - 1];
 
   return (
-    <div className="sv-wrap" aria-label="Shopzy seller dashboard preview">
+    <div className="sv-wrap" aria-label="SynCart seller dashboard preview">
       <style>{css}</style>
 
       {/* Arch + dashboard */}

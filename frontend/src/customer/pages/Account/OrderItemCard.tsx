@@ -47,7 +47,7 @@ const OrderItemCard: React.FC<OrderItemCardProps> = ({ item, order }) => {
                 </div>
 
                 <p className='mt-3 text-[10px] font-semibold tracking-[0.25em] uppercase text-[#b4532a] truncate'>
-                    {item.product?.seller?.businessDetails?.businessName || "Shopzy"}
+                    {item.product?.seller?.businessDetails?.businessName || "SynCart"}
                 </p>
                 <h3 className='acc-serif mt-1 text-lg lg:text-xl font-semibold line-clamp-2 group-hover:text-[#b4532a] transition-colors'>
                     {item.product?.title}

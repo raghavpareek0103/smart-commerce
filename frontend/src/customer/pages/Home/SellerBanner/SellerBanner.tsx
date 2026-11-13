@@ -37,7 +37,7 @@ const SellerBanner = () => {
 
           <h2 className="seller-serif mt-4 text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[1.02]">
             Grow your business <br className="hidden sm:block" />
-            with <span className="italic font-medium text-[#b4532a]">Shopzy.</span>
+            with <span className="italic font-medium text-[#b4532a]">SynCart.</span>
           </h2>
 
           <p className="mt-5 max-w-md text-sm sm:text-base leading-relaxed text-[#2a1d17]/70">

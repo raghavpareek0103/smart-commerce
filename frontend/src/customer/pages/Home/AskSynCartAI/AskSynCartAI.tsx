@@ -1,4 +1,4 @@
-// AskShopzyAI.tsx
+// AskSynCartAI.tsx
 // Home page section: Gemini chatbot ko saamne laata hai.
 // Chip pe click ya sawaal type karke Enter -> sawaal chatbot ko jaata hai aur chatbot khul jaata hai.
 import { useState } from "react";
@@ -6,7 +6,7 @@ import { useAppDispatch } from "../../../../Redux Toolkit/Store";
 import { chatBot } from "../../../../Redux Toolkit/Customer/AiChatBotSlice";
 
 // Home.tsx isi event ko sunke chatbot kholta hai
-export const OPEN_CHAT_EVENT = "shopzy:open-chat";
+export const OPEN_CHAT_EVENT = "syncart:open-chat";
 
 const prompts = [
   { tag: "Gifting", text: "Gifts under ₹999" },
@@ -43,7 +43,7 @@ const css = `
 @media (prefers-reduced-motion:reduce){.ai-orb{animation:none}}
 `;
 
-const AskShopzyAI = () => {
+const AskSynCartAI = () => {
   const dispatch = useAppDispatch();
   const [question, setQuestion] = useState("");
 
@@ -65,7 +65,7 @@ const AskShopzyAI = () => {
         <div className="min-w-0">
           <p className="flex items-center gap-3 text-[11px] font-semibold tracking-[0.35em] uppercase text-[#e7b48f]">
             <span className="w-10 h-px bg-[#e7b48f]" />
-            Shopzy AI · Powered by Gemini
+            SynCart AI · Powered by Gemini
           </p>
 
           <div className="mt-5 flex items-start gap-4">
@@ -91,7 +91,7 @@ const AskShopzyAI = () => {
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
               placeholder="e.g. Kurta for Diwali under ₹1,500"
-              aria-label="Ask Shopzy AI"
+              aria-label="Ask SynCart AI"
             />
             <button type="submit" className="ai-send">
               Ask <span aria-hidden>↗</span>
@@ -119,4 +119,4 @@ const AskShopzyAI = () => {
   );
 };
 
-export default AskShopzyAI;
+export default AskSynCartAI;

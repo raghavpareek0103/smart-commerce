@@ -315,17 +315,17 @@
 ////
 ////    private Seller createDemoSeller() {
 ////        Seller seller = new Seller();
-////        seller.setSellerName("Shopzy Studio");
+////        seller.setSellerName("SynCart Studio");
 ////        seller.setEmail(DEMO_EMAIL);
 ////        seller.setMobile("9999999999");
 ////        seller.setGSTIN("22AAAAA0000A1Z5");
 ////        seller.setRole(USER_ROLE.ROLE_SELLER);
 ////        seller.setEmailVerified(true);
 ////        seller.setAccountStatus(AccountStatus.ACTIVE);
-////        seller.getBusinessDetails().setBusinessName("Shopzy Studio");
+////        seller.getBusinessDetails().setBusinessName("SynCart Studio");
 ////        seller.getBusinessDetails().setBusinessEmail(DEMO_EMAIL);
 ////        seller.getBusinessDetails().setBusinessMobile("9999999999");
-////        seller.getPickupAddress().setName("Shopzy Studio");
+////        seller.getPickupAddress().setName("SynCart Studio");
 ////        seller.getPickupAddress().setCity("Jaipur");
 ////        seller.getPickupAddress().setState("Rajasthan");
 ////        seller.getPickupAddress().setPinCode("302001");
@@ -2314,17 +2314,17 @@
 //
 //    private Seller createDemoSeller() {
 //        Seller seller = new Seller();
-//        seller.setSellerName("Shopzy Studio");
+//        seller.setSellerName("SynCart Studio");
 //        seller.setEmail(DEMO_EMAIL);
 //        seller.setMobile("9999999999");
 //        seller.setGSTIN("22AAAAA0000A1Z5");
 //        seller.setRole(USER_ROLE.ROLE_SELLER);
 //        seller.setEmailVerified(true);
 //        seller.setAccountStatus(AccountStatus.ACTIVE);
-//        seller.getBusinessDetails().setBusinessName("Shopzy Studio");
+//        seller.getBusinessDetails().setBusinessName("SynCart Studio");
 //        seller.getBusinessDetails().setBusinessEmail(DEMO_EMAIL);
 //        seller.getBusinessDetails().setBusinessMobile("9999999999");
-//        seller.getPickupAddress().setName("Shopzy Studio");
+//        seller.getPickupAddress().setName("SynCart Studio");
 //        seller.getPickupAddress().setCity("Jaipur");
 //        seller.getPickupAddress().setState("Rajasthan");
 //        seller.getPickupAddress().setPinCode("302001");
@@ -2346,7 +2346,7 @@
 //    // Product k ki pehli photo category ki k-th photo; doosri photo (hover) agli wali
 //    private List<String> imagesFor(String[] imgs, int k) {
 //        if (imgs == null || imgs.length == 0) {
-//            return new ArrayList<>(List.of("https://placehold.co/600x800/f3ebe3/2a1d17/png?text=Shopzy"));
+//            return new ArrayList<>(List.of("https://placehold.co/600x800/f3ebe3/2a1d17/png?text=SynCart"));
 //        }
 //        String main = imgs[k % imgs.length];
 //        String other = imgs[(k + 1) % imgs.length];
@@ -2695,17 +2695,17 @@
 //
 //    private Seller createDemoSeller() {
 //        Seller seller = new Seller();
-//        seller.setSellerName("Shopzy Studio");
+//        seller.setSellerName("SynCart Studio");
 //        seller.setEmail(DEMO_EMAIL);
 //        seller.setMobile("9999999999");
 //        seller.setGSTIN("22AAAAA0000A1Z5");
 //        seller.setRole(USER_ROLE.ROLE_SELLER);
 //        seller.setEmailVerified(true);
 //        seller.setAccountStatus(AccountStatus.ACTIVE);
-//        seller.getBusinessDetails().setBusinessName("Shopzy Studio");
+//        seller.getBusinessDetails().setBusinessName("SynCart Studio");
 //        seller.getBusinessDetails().setBusinessEmail(DEMO_EMAIL);
 //        seller.getBusinessDetails().setBusinessMobile("9999999999");
-//        seller.getPickupAddress().setName("Shopzy Studio");
+//        seller.getPickupAddress().setName("SynCart Studio");
 //        seller.getPickupAddress().setCity("Jaipur");
 //        seller.getPickupAddress().setState("Rajasthan");
 //        seller.getPickupAddress().setPinCode("302001");
@@ -4645,17 +4645,17 @@ public class DemoDataSeeder implements CommandLineRunner {
 
     private Seller createDemoSeller() {
         Seller seller = new Seller();
-        seller.setSellerName("Shopzy Studio");
+        seller.setSellerName("SynCart Studio");
         seller.setEmail(DEMO_EMAIL);
         seller.setMobile("9999999999");
         seller.setGSTIN("22AAAAA0000A1Z5");
         seller.setRole(USER_ROLE.ROLE_SELLER);
         seller.setEmailVerified(true);
         seller.setAccountStatus(AccountStatus.ACTIVE);
-        seller.getBusinessDetails().setBusinessName("Shopzy Studio");
+        seller.getBusinessDetails().setBusinessName("SynCart Studio");
         seller.getBusinessDetails().setBusinessEmail(DEMO_EMAIL);
         seller.getBusinessDetails().setBusinessMobile("9999999999");
-        seller.getPickupAddress().setName("Shopzy Studio");
+        seller.getPickupAddress().setName("SynCart Studio");
         seller.getPickupAddress().setCity("Jaipur");
         seller.getPickupAddress().setState("Rajasthan");
         seller.getPickupAddress().setPinCode("302001");
@@ -4677,7 +4677,7 @@ public class DemoDataSeeder implements CommandLineRunner {
     // Product k ki pehli photo category ki k-th photo; doosri photo (hover) agli wali
     private List<String> imagesFor(String[] imgs, int k) {
         if (imgs == null || imgs.length == 0) {
-            return new ArrayList<>(List.of("https://placehold.co/600x800/f3ebe3/2a1d17/png?text=Shopzy"));
+            return new ArrayList<>(List.of("https://placehold.co/600x800/f3ebe3/2a1d17/png?text=SynCart"));
         }
         String main = imgs[k % imgs.length];
         String other = imgs[(k + 1) % imgs.length];

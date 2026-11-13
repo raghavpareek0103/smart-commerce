@@ -54,7 +54,7 @@ const ChatBot = ({ handleClose, productId }: ChatBotProps) => {
             <AutoAwesomeIcon sx={{ fontSize: 22, color: "#fde68a" }} />
           </div>
           <div>
-            <h2 className="font-bold leading-tight">Shopzy AI Assistant</h2>
+            <h2 className="font-bold leading-tight">SynCart AI Assistant</h2>
             <p className="text-xs text-white/75 flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-[#4ade80] online-dot" />
               {productId ? "Ask anything about this product" : "Online • replies instantly"}

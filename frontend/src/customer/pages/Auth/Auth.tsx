@@ -37,7 +37,7 @@ const Auth = () => {
                     {/* Logo */}
                     <div className='relative flex items-center gap-2'>
                         <span className='auth-serif w-9 h-9 rounded-xl grid place-items-center text-[#c9a96e] font-semibold italic text-xl bg-[#26312c] border border-[#c9a96e]/45'>S</span>
-                        <span className='auth-serif text-[28px] font-semibold leading-none'>Shop<span className='italic font-medium text-[#c9a96e]'>zy</span></span>
+                        <span className='auth-serif text-[28px] font-semibold leading-none'>Syn<span className='italic font-medium text-[#c9a96e]'>Cart</span></span>
                     </div>
 
                     <div key={String(isLoginPage)} className='relative auth-rise'>
@@ -88,14 +88,14 @@ const Auth = () => {
                     </div>
 
                     <p className='text-center text-sm text-[#2a1d17]/60 mt-8'>
-                        {isLoginPage ? "New to Shopzy?" : "Already have an account?"}{" "}
+                        {isLoginPage ? "New to SynCart?" : "Already have an account?"}{" "}
                         <button onClick={() => setIsLoginPage(!isLoginPage)} className='group relative font-semibold text-[#b4532a]'>
                             {isLoginPage ? "Create an account" : "Log in"}
                             <span className='absolute left-0 -bottom-0.5 h-px w-full origin-left scale-x-0 group-hover:scale-x-100 bg-[#b4532a] transition-transform duration-300' />
                         </button>
                     </p>
                     <p className='text-center text-[11px] text-[#2a1d17]/45 mt-3'>
-                        By continuing, you agree to Shopzy's Terms of Use and Privacy Policy.
+                        By continuing, you agree to SynCart's Terms of Use and Privacy Policy.
                     </p>
                 </div>
             </div>

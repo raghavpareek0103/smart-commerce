@@ -110,7 +110,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ item }) => {
                                     </button>
                                 </Tooltip>
                             )}
-                            <Tooltip title="Ask Shopzy AI">
+                            <Tooltip title="Ask SynCart AI">
                                 <button
                                     onClick={handleShowChatBot}
                                     aria-label="Ask AI about this product"

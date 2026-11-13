@@ -96,10 +96,10 @@ public class AuthServiceImpl implements AuthService {
         System.out.println("OTP SAVED IN DATABASE");
 
         // Email details
-        String subject = "Shopzy Login/Signup OTP";
+        String subject = "SynCart Login/Signup OTP";
 
         String text =
-                "Your Shopzy verification OTP is: ";
+                "Your SynCart verification OTP is: ";
 
         System.out.println("SENDING OTP EMAIL...");
 

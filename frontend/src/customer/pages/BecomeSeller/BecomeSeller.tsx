@@ -35,7 +35,7 @@ const BecomeSeller = () => {
         <button onClick={() => navigate("/")} className="flex items-center gap-2 mb-10">
           <span className="bs-serif w-9 h-9 rounded-xl grid place-items-center text-[#c9a96e] font-semibold italic text-xl bg-[#1b2420] border border-[#c9a96e]/45">S</span>
           <span className="bs-serif text-[26px] font-semibold leading-none">
-            Shop<span className="italic font-medium text-[#b4532a]">zy</span>
+            Syn<span className="italic font-medium text-[#b4532a]">Cart</span>
             <span className="ml-2 align-middle text-[10px] font-sans font-semibold tracking-[0.3em] uppercase text-[#2a1d17]/50">Seller</span>
           </span>
         </button>
@@ -64,7 +64,7 @@ const BecomeSeller = () => {
         {/* Login / Register toggle */}
         <div className="mt-10 pt-6 border-t border-[#2a1d17]/10 flex items-center justify-between gap-4">
           <p className="text-sm text-[#2a1d17]/60">
-            {isLoginPage ? "New to Shopzy?" : "Already a seller?"}
+            {isLoginPage ? "New to SynCart?" : "Already a seller?"}
           </p>
           <button
             onClick={() => setIsLoginPage(!isLoginPage)}

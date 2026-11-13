@@ -66,7 +66,7 @@ const Footer = () => {
       <div className="relative">
         {/* Bada watermark text */}
         <span className="footer-watermark footer-serif italic pointer-events-none select-none absolute left-1/2 -translate-x-1/2 bottom-6 whitespace-nowrap">
-          Shopzy
+          SynCart
         </span>
 
       {/* ---------- Newsletter card (footer ke andar, upar) ---------- */}
@@ -81,7 +81,7 @@ const Footer = () => {
               <MarkEmailReadOutlinedIcon sx={{ fontSize: 26 }} />
             </span>
             <div>
-              <p className="text-[10px] font-semibold tracking-[0.35em] uppercase text-[#b4532a]">The Shopzy Letter</p>
+              <p className="text-[10px] font-semibold tracking-[0.35em] uppercase text-[#b4532a]">The SynCart Letter</p>
               <h3 className="footer-serif mt-1 text-2xl lg:text-3xl font-semibold leading-tight">Get exclusive offers <span className="italic font-medium text-[#b4532a]">first</span></h3>
               <p className="text-[#2a1d17]/65 text-sm mt-1">New arrivals, flash sales & coupons — straight to your inbox.</p>
             </div>
@@ -113,7 +113,7 @@ const Footer = () => {
               <span className="footer-serif w-9 h-9 rounded-xl grid place-items-center text-[#c9a96e] font-semibold italic text-xl bg-[#26312c] border border-[#c9a96e]/45">
                 S
               </span>
-              <span className="footer-serif text-3xl font-semibold text-[#f4efe6]">Shop<span className="italic font-medium text-[#c9a96e]">zy</span></span>
+              <span className="footer-serif text-3xl font-semibold text-[#f4efe6]">Syn<span className="italic font-medium text-[#c9a96e]">Cart</span></span>
             </button>
             <p className="text-sm leading-relaxed max-w-sm">
               Your one-stop shop for fashion, electronics and home essentials — from trusted sellers, delivered fast.
@@ -181,7 +181,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="relative border-t border-white/10">
           <div className="px-5 lg:px-20 py-5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-            <p>© {new Date().getFullYear()} Shopzy. All rights reserved. Made with ❤️ in India</p>
+            <p>© {new Date().getFullYear()} SynCart. All rights reserved. Made with ❤️ in India</p>
             <div className="flex items-center gap-5">
               <span className="hover:text-white cursor-pointer">Privacy</span>
               <span className="hover:text-white cursor-pointer">Terms</span>

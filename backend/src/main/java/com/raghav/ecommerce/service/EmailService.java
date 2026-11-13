@@ -39,7 +39,7 @@ public class EmailService {
 
             // Email body
             helper.setText(
-                    "<h2>Shopzy Verification</h2>" +
+                    "<h2>SynCart Verification</h2>" +
                             "<p>" + text + "</p>" +
                             "<h1>" + otp + "</h1>" +
                             "<p>This OTP is valid for verification.</p>",

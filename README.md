@@ -1,4 +1,4 @@
-# 🛒 Shopzy — Smart Commerce
+# 🛒 SynCart — Smart Commerce
 
 ![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.3-6DB33F?logo=springboot&logoColor=white)
@@ -7,14 +7,14 @@
 ![JWT](https://img.shields.io/badge/Auth-JWT%20%2B%20OTP-black)
 ![Razorpay](https://img.shields.io/badge/Payments-Razorpay-0C2451)
 
-**Shopzy** is a full-stack, multi-vendor e-commerce platform built with **Java Spring Boot** and **React + TypeScript**. It has separate experiences for **customers, sellers and admins**, with email-OTP login, Razorpay payments, an AI shopping assistant (Google Gemini) and a clean editorial-style UI.
+**SynCart** is a full-stack, multi-vendor e-commerce platform built with **Java Spring Boot** and **React + TypeScript**. It has separate experiences for **customers, sellers and admins**, with email-OTP login, Razorpay payments, an AI shopping assistant (Google Gemini) and a clean editorial-style UI.
 
 ---
 
 ## 📸 Screenshots
 
 ### Login — passwordless email OTP
-![Shopzy login page](assets/images/login.png)
+![SynCart login page](assets/images/login.png)
 
 ---
 
@@ -23,7 +23,7 @@
 | Category | Details |
 |---|---|
 | Developer | Raghav Pareek |
-| Project | Shopzy — Smart Commerce |
+| Project | SynCart — Smart Commerce |
 | Type | Full Stack Web Application (Final Year Project) |
 | Architecture | REST API + React SPA |
 | Backend | Java 17, Spring Boot 3.3 |
@@ -232,7 +232,7 @@ Covers: OTP generation, JWT creation/validation, authentication service, cart to
 ---
 ## 👨‍💻 Author
 
-**Raghav Pareek** — designed and developed Shopzy as a final year project.
+**Raghav Pareek** — designed and developed SynCart as a final year project.
 
 - GitHub: [@raghavpareek0103](https://github.com/raghavpareek0103)
 
@@ -240,7 +240,7 @@ Covers: OTP generation, JWT creation/validation, authentication service, cart to
 
 © 2026 Raghav Pareek. All rights reserved.## 👨‍💻 Author
 
-**Raghav Pareek** — designed and developed Shopzy as a final year project.
+**Raghav Pareek** — designed and developed SynCart as a final year project.
 
 - GitHub: [@raghavpareek0103](https://github.com/raghavpareek0103)
 

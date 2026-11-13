@@ -143,7 +143,7 @@ const Navbar = () => {
               </button>
               <span className="w-px h-3 bg-[#f4efe6]/20" />
               <button onClick={becomeSellerClick} className="flex items-center gap-1.5 px-3 text-[#f4efe6]/70 hover:text-[#c9a96e] transition-colors">
-                <StorefrontOutlinedIcon sx={{ fontSize: 14 }} /> Sell on Shopzy
+                <StorefrontOutlinedIcon sx={{ fontSize: 14 }} /> Sell on SynCart
               </button>
               <span className="w-px h-3 bg-[#f4efe6]/20" />
               <button onClick={() => navigate("/")} className="flex items-center gap-1.5 px-3 text-[#f4efe6]/70 hover:text-[#c9a96e] transition-colors">
@@ -182,7 +182,7 @@ const Navbar = () => {
                 <span className="logo-badge nav-serif w-9 h-9 rounded-xl grid place-items-center text-[#c9a96e] font-semibold italic text-xl shadow-md">
                   S
                 </span>
-                <span className="nav-serif text-2xl md:text-[28px] font-semibold text-[#2a1d17] leading-none">Shop<span className="italic font-medium text-[#b4532a]">zy</span></span>
+                <span className="nav-serif text-2xl md:text-[28px] font-semibold text-[#2a1d17] leading-none">Syn<span className="italic font-medium text-[#b4532a]">Cart</span></span>
               </button>
             </div>
 

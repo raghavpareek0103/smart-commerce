@@ -46,7 +46,7 @@ const UserDetails = () => {
             <span className="acc-serif text-3xl italic font-semibold">{u?.fullName?.[0]?.toUpperCase() || "S"}</span>
           </div>
           <p className="acc-serif mt-5 text-2xl font-semibold">{u?.fullName}</p>
-          <p className="mt-1 text-xs text-[#f4efe6]/55">Shopzy member</p>
+          <p className="mt-1 text-xs text-[#f4efe6]/55">SynCart member</p>
           <div className="relative mt-6 inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#c9a96e]/40 text-[11px] font-semibold tracking-[0.2em] uppercase text-[#c9a96e]">
             <VerifiedOutlinedIcon sx={{ fontSize: 15 }} /> Verified account
           </div>

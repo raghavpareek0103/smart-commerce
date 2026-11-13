@@ -10,7 +10,7 @@ import BrandStrip from './TopBrands/BrandStrip'
 import { Backdrop, CircularProgress } from '@mui/material'
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import { useAppSelector } from '../../../Redux Toolkit/Store'
-import AskShopzyAI, { OPEN_CHAT_EVENT } from './AskShopzyAI/AskShopzyAI'
+import AskSynCartAI, { OPEN_CHAT_EVENT } from './AskSynCartAI/AskSynCartAI'
 import RecentlyViewed from './RecentlyViewed/RecentlyViewed'
 import BudgetStore from './BudgetStore/BudgetStore'
 
@@ -18,7 +18,7 @@ const Home = () => {
     const [showChatBot, setShowChatBot] = useState(false)
     const { homePage } = useAppSelector(store => store)
 
-    // "Ask Shopzy AI" section se chatbot kholne ke liye
+    // "Ask SynCart AI" section se chatbot kholne ke liye
     useEffect(() => {
         const openChat = () => setShowChatBot(true)
         window.addEventListener(OPEN_CHAT_EVENT, openChat)
@@ -51,8 +51,8 @@ const Home = () => {
                 {/* Today's Best Deals */}
                 {homePage.homePageData?.deals && <DealSlider />}
 
-                {/* NEW: Ask Shopzy AI (dark) */}
-                <AskShopzyAI />
+                {/* NEW: Ask SynCart AI (dark) */}
+                <AskSynCartAI />
 
                 {/* NEW: Shop by Budget (light) */}
                 <BudgetStore />
@@ -76,7 +76,7 @@ const Home = () => {
                         <span className='w-9 h-9 rounded-full bg-[#c9a96e]/20 grid place-items-center'>
                             <AutoAwesomeIcon sx={{ fontSize: 20, color: "#c9a96e" }} />
                         </span>
-                        <span className='hidden sm:inline text-[#f6f1ea]'>Ask Shopzy <span className='italic' style={{ fontFamily: '"Playfair Display", Georgia, serif', color: '#c9a96e' }}>AI</span></span>
+                        <span className='hidden sm:inline text-[#f6f1ea]'>Ask SynCart <span className='italic' style={{ fontFamily: '"Playfair Display", Georgia, serif', color: '#c9a96e' }}>AI</span></span>
                     </button>}
             </section>
         </div>

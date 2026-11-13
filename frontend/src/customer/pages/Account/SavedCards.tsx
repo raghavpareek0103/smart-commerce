@@ -29,7 +29,7 @@ const SavedCards = () => {
           <div className='relative aspect-[1.6/1] rounded-[24px] p-6 text-[#f4efe6] overflow-hidden shadow-[0_30px_60px_-25px_rgba(27,36,32,0.7)]' style={{ background: "linear-gradient(135deg,#1b2420 0%,#26312c 55%,#2a1d17 100%)" }}>
             <span className='acc-serif absolute -right-6 -bottom-14 text-[170px] italic leading-none text-transparent' style={{ WebkitTextStroke: "1px rgba(201,169,110,0.18)" }}>zy</span>
             <div className='relative flex items-start justify-between'>
-              <span className='acc-serif text-xl'>Shop<span className='italic text-[#c9a96e]'>zy</span></span>
+              <span className='acc-serif text-xl'>Syn<span className='italic text-[#c9a96e]'>Cart</span></span>
               <span className='text-[10px] font-semibold tracking-[0.25em] uppercase text-[#c9a96e]'>Member</span>
             </div>
             <div className='relative mt-6 w-11 h-8 rounded-md' style={{ background: "linear-gradient(135deg,#e2c891,#c9a96e 50%,#a88a52)" }} />

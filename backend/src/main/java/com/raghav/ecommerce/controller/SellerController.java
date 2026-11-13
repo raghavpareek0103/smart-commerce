@@ -52,7 +52,7 @@ public class SellerController {
         String otp = OtpUtils.generateOTP();
         VerificationCode verificationCode = verificationService.createVerificationCode(otp, req.getEmail());
 
-        String subject = "Shopzy Login Otp";
+        String subject = "SynCart Login Otp";
         String text = "your login otp is - ";
         emailService.sendVerificationOtpEmail(req.getEmail(), verificationCode.getOtp(), subject, text);
 
@@ -129,8 +129,8 @@ public class SellerController {
         String otp = OtpUtils.generateOTP();
         VerificationCode verificationCode = verificationService.createVerificationCode(otp, seller.getEmail());
 
-        String subject = "Shopzy Email Verification Code";
-        String text = "Welcome to Shopzy, verify your account using this link ";
+        String subject = "SynCart Email Verification Code";
+        String text = "Welcome to SynCart, verify your account using this link ";
         String frontend_url = "http://localhost:5173/verify-seller/";
         emailService.sendVerificationOtpEmail(seller.getEmail(), verificationCode.getOtp(), subject, text + frontend_url);
         return new ResponseEntity<>(savedSeller, HttpStatus.CREATED);

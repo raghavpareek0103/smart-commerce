@@ -47,7 +47,7 @@ public class AppConfig {
             @Override
             public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
                 CorsConfiguration cfg = new CorsConfiguration();
-                cfg.setAllowedOrigins(Arrays.asList("https://Shopzy.vercel.app",
+                cfg.setAllowedOrigins(Arrays.asList("https://SynCart.vercel.app",
                         "http://localhost:3000",
                         "http://localhost:5173",
                         "http://127.0.0.1:5173"));

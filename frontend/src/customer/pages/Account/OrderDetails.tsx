@@ -76,7 +76,7 @@ const OrderDetails = () => {
             <span className={`w-1.5 h-1.5 rounded-full ${st.dot}`} /> {st.label}
           </span>
           <p className='mt-4 text-[10px] font-semibold tracking-[0.25em] uppercase text-[#b4532a]'>
-            {item.product?.seller?.businessDetails?.businessName || "Shopzy"}
+            {item.product?.seller?.businessDetails?.businessName || "SynCart"}
           </p>
           <h2 className='acc-serif mt-1 text-3xl lg:text-4xl font-semibold leading-tight'>{item.product?.title}</h2>
           <div className='mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-[#2a1d17]/60'>
@@ -158,7 +158,7 @@ const OrderDetails = () => {
 
       {/* ---------- cancel ---------- */}
       <div className='flex flex-wrap items-center justify-between gap-4 pt-2'>
-        <p className='text-xs text-[#2a1d17]/50'>Sold by <b className='text-[#2a1d17]'>{item.product?.seller?.businessDetails?.businessName || "Shopzy"}</b></p>
+        <p className='text-xs text-[#2a1d17]/50'>Sold by <b className='text-[#2a1d17]'>{item.product?.seller?.businessDetails?.businessName || "SynCart"}</b></p>
         {status !== "DELIVERED" && (
           <button
             disabled={cancelled}

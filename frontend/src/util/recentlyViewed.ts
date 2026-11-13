@@ -13,9 +13,9 @@ export interface RecentProduct {
   viewedAt: number;
 }
 
-const KEY = "shopzy_recently_viewed";
+const KEY = "syncart_recently_viewed";
 const MAX = 12;
-export const RECENT_EVENT = "shopzy:recently-viewed";
+export const RECENT_EVENT = "syncart:recently-viewed";
 
 export const getRecentlyViewed = (): RecentProduct[] => {
   try {
