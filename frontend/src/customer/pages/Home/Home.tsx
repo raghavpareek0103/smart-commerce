@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Banner from './Banner/Banner'
 import HomeCategory from './HomeCategory/HomeCategory'
 import FeaturedCollections from './Collections/FeaturedCollections'
@@ -10,10 +10,20 @@ import BrandStrip from './TopBrands/BrandStrip'
 import { Backdrop, CircularProgress } from '@mui/material'
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import { useAppSelector } from '../../../Redux Toolkit/Store'
+import AskShopzyAI, { OPEN_CHAT_EVENT } from './AskShopzyAI/AskShopzyAI'
+import RecentlyViewed from './RecentlyViewed/RecentlyViewed'
+import BudgetStore from './BudgetStore/BudgetStore'
 
 const Home = () => {
     const [showChatBot, setShowChatBot] = useState(false)
     const { homePage } = useAppSelector(store => store)
+
+    // "Ask Shopzy AI" section se chatbot kholne ke liye
+    useEffect(() => {
+        const openChat = () => setShowChatBot(true)
+        window.addEventListener(OPEN_CHAT_EVENT, openChat)
+        return () => window.removeEventListener(OPEN_CHAT_EVENT, openChat)
+    }, [])
 
     if (homePage.loading) {
         return <Backdrop open={true}><CircularProgress color="inherit" /></Backdrop>
@@ -23,6 +33,9 @@ const Home = () => {
         <div className='relative'>
             {/* Electronics patti */}
             {homePage.homePageData?.electricCategories && <ElectronicCategory />}
+
+            {/* NEW: Recently Viewed (kuch na dekha ho to apne aap chhupa rehta hai) */}
+            <RecentlyViewed />
 
             {/* Hero banners */}
             <Banner />
@@ -38,6 +51,12 @@ const Home = () => {
                 {/* Today's Best Deals */}
                 {homePage.homePageData?.deals && <DealSlider />}
 
+                {/* NEW: Ask Shopzy AI (dark) */}
+                <AskShopzyAI />
+
+                {/* NEW: Shop by Budget (light) */}
+                <BudgetStore />
+
                 {/* Shop by Category */}
                 {homePage.homePageData?.shopByCategories && <HomeCategory />}
 
@@ -45,21 +64,21 @@ const Home = () => {
                 <SellerBanner />
             </div>
 
-                        {/* AI chat button */}
-                        <section className='fixed bottom-6 right-6 z-50'>
-                            {showChatBot
-                                ? <ChatBot handleClose={() => setShowChatBot(false)} />
-                                : <button
-                                    onClick={() => setShowChatBot(true)}
-                                    className='ai-fab flex items-center gap-2 p-2.5 sm:pl-3 sm:pr-5 h-14 rounded-full text-white font-semibold hover:scale-105 transition-transform'
-                                    style={{ background: "linear-gradient(135deg,#1b2420,#2f3d35)", border: "1px solid rgba(201,169,110,0.5)" }}
-                                >
-                                    <span className='w-9 h-9 rounded-full bg-[#c9a96e]/20 grid place-items-center'>
-                                        <AutoAwesomeIcon sx={{ fontSize: 20, color: "#c9a96e" }} />
-                                    </span>
-                                    <span className='hidden sm:inline text-[#f6f1ea]'>Ask Shopzy <span className='italic' style={{ fontFamily: '"Playfair Display", Georgia, serif', color: '#c9a96e' }}>AI</span></span>
-                                </button>}
-                        </section>
+            {/* AI chat button */}
+            <section className='fixed bottom-6 right-6 z-50'>
+                {showChatBot
+                    ? <ChatBot handleClose={() => setShowChatBot(false)} />
+                    : <button
+                        onClick={() => setShowChatBot(true)}
+                        className='ai-fab flex items-center gap-2 p-2.5 sm:pl-3 sm:pr-5 h-14 rounded-full text-white font-semibold hover:scale-105 transition-transform'
+                        style={{ background: "linear-gradient(135deg,#1b2420,#2f3d35)", border: "1px solid rgba(201,169,110,0.5)" }}
+                    >
+                        <span className='w-9 h-9 rounded-full bg-[#c9a96e]/20 grid place-items-center'>
+                            <AutoAwesomeIcon sx={{ fontSize: 20, color: "#c9a96e" }} />
+                        </span>
+                        <span className='hidden sm:inline text-[#f6f1ea]'>Ask Shopzy <span className='italic' style={{ fontFamily: '"Playfair Display", Georgia, serif', color: '#c9a96e' }}>AI</span></span>
+                    </button>}
+            </section>
         </div>
     )
 }

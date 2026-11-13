@@ -25,6 +25,7 @@ import { fetchProductById, getAllProducts } from '../../../../Redux Toolkit/Cust
 import { addItemToCart } from '../../../../Redux Toolkit/Customer/CartSlice';
 import { addProductToWishlist } from '../../../../Redux Toolkit/Customer/WishlistSlice';
 import { deleteReview, fetchReviewsByProductId } from '../../../../Redux Toolkit/Customer/ReviewSlice';
+import { addRecentlyViewed } from '../../../../util/recentlyViewed';
 
 // Is page ki saari styling yahin hai — alag CSS file banane ki zarurat nahi
 const pdCss = `
@@ -104,6 +105,11 @@ const ProductDetails = () => {
 
     const product = products.product;
     const images: string[] = product?.images || [];
+
+    // Recently Viewed ke liye yaad rakho (Home page pe dikhega)
+    useEffect(() => {
+        if (product?.id) addRecentlyViewed(product);
+    }, [product?.id]);
 
     useEffect(() => {
         if (productId) {

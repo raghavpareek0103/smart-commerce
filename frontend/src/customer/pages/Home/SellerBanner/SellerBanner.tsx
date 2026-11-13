@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
-import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import "./SellerBanner.css";
+import SellerHeroVisual from "./SellerHeroVisual";
 
 // Teen bade fayde (number + line)
 const stats = [
@@ -23,53 +23,9 @@ const SellerBanner = () => {
       </span>
 
       <div className="relative grid md:grid-cols-2 gap-10 lg:gap-16 px-5 lg:px-20 py-14 lg:py-20">
-        {/* ---------- Left: arch photo ---------- */}
-        <div className="relative hidden md:block min-h-[480px]">
-          <div className="absolute left-0 top-0 bottom-0 w-[78%] rounded-t-full overflow-hidden shadow-[0_30px_60px_-30px_rgba(42,29,23,0.5)]">
-            <img
-              src="/seller_banner_image.jpg"
-              alt="Seller"
-              className="seller-zoom w-full h-full object-cover object-[70%_center]"
-            />
-          </div>
-
-          {/* Ghoomta hua gol badge */}
-          <button
-            onClick={() => navigate("/become-seller")}
-            aria-label="Become a seller"
-            className="absolute right-[6%] top-8 w-32 h-32 grid place-items-center text-[#2a1d17]"
-          >
-            <svg viewBox="0 0 100 100" className="seller-spin absolute inset-0 w-full h-full">
-              <defs>
-                <path id="sellerCircle" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0" />
-              </defs>
-              <text fill="currentColor" fontSize="9" fontWeight="600">
-                <textPath href="#sellerCircle" textLength="236" lengthAdjust="spacing">SELL ON SHOPZY • GROW WITH US •</textPath>
-              </text>
-            </svg>
-            <span className="w-14 h-14 rounded-full grid place-items-center bg-[#b4532a] text-white shadow-lg">
-              <ArrowOutwardIcon />
-            </span>
-          </button>
-
-          {/* Floating card: new order */}
-          <div className="seller-float absolute left-[52%] top-[42%] bg-white rounded-2xl shadow-2xl px-5 py-4">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[#b4532a]">New order</p>
-            <p className="seller-serif text-lg font-semibold mt-0.5">Cotton Kurta Set</p>
-            <p className="text-xs text-[#2a1d17]/55 mt-0.5">Just now · Jaipur</p>
-          </div>
-
-          {/* Floating card: sales */}
-          <div className="seller-float-2 absolute right-[2%] bottom-6 bg-[#2a1d17] text-[#f3ebe3] rounded-2xl shadow-2xl px-5 py-4">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[#e7b48f] flex items-center gap-1.5">
-              <TrendingUpIcon sx={{ fontSize: 14 }} /> Sales this week
-            </p>
-            <div className="flex items-end gap-1.5 h-12 mt-3">
-              {[35, 50, 40, 65, 55, 80, 95].map((h, i) => (
-                <span key={i} className="seller-bar w-2.5 rounded-sm bg-gradient-to-t from-[#b4532a] to-[#e7b48f]" style={{ height: `${h}%`, animationDelay: `${i * 80}ms` }} />
-              ))}
-            </div>
-          </div>
+        {/* ---------- Left: seller dashboard visual (photo ki jagah) ---------- */}
+        <div className="relative hidden md:flex items-center min-h-[480px]">
+          <SellerHeroVisual />
         </div>
 
         {/* ---------- Right: text ---------- */}

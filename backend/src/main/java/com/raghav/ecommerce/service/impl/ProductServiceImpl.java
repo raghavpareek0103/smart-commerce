@@ -136,7 +136,7 @@ public class ProductServiceImpl implements ProductService {
             List<Predicate> predicates = new ArrayList<>();
 
 
-            if (category != null) {
+            if (category != null && !category.isBlank() && !category.equalsIgnoreCase("all")) {
                 Join<Product, Category> categoryJoin = root.join("category");
 //                predicates.add(criteriaBuilder.equal(categoryJoin.get("categoryId"), category));
 //                predicates.add(criteriaBuilder.equal(categoryJoin.get("parentCategory").get("categoryId"), category));
